@@ -1,7 +1,7 @@
 from string import ascii_lowercase, digits
 
 
-def format_string(s) -> str:
+def format_string(s: str) -> str:
     """Возвращает строку без знаков препинания и пробелов"""
     char_list = []
 

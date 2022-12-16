@@ -5,7 +5,10 @@ def sort_list(a: list) -> list:
     mn, mx = min(a), max(a)
 
     for i in range(len(a)):
-        a[i] = mx if a[i] == mn else mn if a[i] == mx else a[i]
+        if a[i] == mn:
+            a[i] = mx
+        elif a[i] == mx:
+            a[i] = mn
 
     a.append(mn)
 
