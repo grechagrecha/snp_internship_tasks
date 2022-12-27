@@ -31,7 +31,7 @@ class Dessert:
         self._calories = value
 
     def is_healthy(self):
-        return True if self.calories < 200 else False
+        return self.calories < 200
 
     def is_delicious(self):
         return True

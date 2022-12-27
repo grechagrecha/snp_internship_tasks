@@ -17,6 +17,4 @@ def multiply_numbers(*inputs):
 
     for i in digit_string:
         ans *= int(i)
-
-    print(ans)
     return ans
