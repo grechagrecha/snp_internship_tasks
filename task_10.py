@@ -1,15 +1,14 @@
-from string import punctuation
 from re import sub
 
 
 def count_words(s: str):
     s = s.lower()
 
-    words_list = sub('[^a-z]', ' ', s).split()
-    words_set = set(words_list)
-    words_dict = {}
+    word_list = sub('[^a-z]', ' ', s).split()
+    word_set = set(word_list)
+    word_dict = {}
 
-    for word in words_set:
-        words_dict.update({word: words_list.count(word)})
+    for word in word_set:
+        word_dict.update({word: word_list.count(word)})
 
-    return words_dict
+    return word_dict
