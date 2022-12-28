@@ -29,6 +29,7 @@ def rps_game_winner(choices):
             (player1.choice == 'R' and player2.choice == 'S') or \
             (player1.choice == 'P' and player2.choice == 'R') or \
             (player1.choice == 'S' and player2.choice == 'P'):
-        return player1
+        return str(player1)
     else:
-        return player2
+        return str(player2)
+

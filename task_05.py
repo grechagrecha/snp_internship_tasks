@@ -1,7 +1,7 @@
 import datetime as dt
 
 
-def time_in_future(days: int) -> str:
+def date_in_future(days: int) -> str:
     curr_time = dt.datetime.now()
 
     if not isinstance(days, int):
